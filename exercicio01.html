@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="primeiroNumero">2</p>
+    <p id="segundoNumero">3</p>
+    <p id="Total">?</p>
+</body>
+<script>
+    const numeroUm = document.getElementById('primeiroNumero');
+    const numeroDois = document.getElementById('segundoNumero');
+    let resultado = document.getElementById('Total');
+
+    let soma = Number(numeroUm.innerText) + Number(numeroDois.innerText);
+
+    resultado.innerText = `A soma de ${numeroUm.innerText} + ${numeroDois.innerText} é ${soma}`;
+</script>
+</html>
